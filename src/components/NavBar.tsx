@@ -12,7 +12,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import { FaBug } from "react-icons/fa";
-
+import { Skeleton } from "@/components";
 const navLinks = [
   { id: 0, label: "Dashbaord", href: "/" },
   { id: 1, label: "Issues", href: "/issues/list" },
@@ -60,7 +60,7 @@ const NavLinks = () => {
 const AuthStatus = () => {
   const { status, data: session } = useSession();
 
-  if (status === "loading") return null;
+  if (status === "loading") return <Skeleton width="3rem" />;
 
   if (status === "unauthenticated")
     return <Link href="/api/auth/signin">Login</Link>;
