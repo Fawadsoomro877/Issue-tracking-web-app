@@ -6,7 +6,7 @@ import { FaBug } from "react-icons/fa";
 
 const navLinks = [
   { id: 0, label: "Dashbaord", href: "/" },
-  { id: 1, label: "Issues", href: "/issues" },
+  { id: 1, label: "Issues", href: "/issues/list" },
 ];
 
 const NavBar = () => {
