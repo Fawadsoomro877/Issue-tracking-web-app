@@ -23,7 +23,9 @@ const IssueSummary = ({ open, inProgress, closed }: Props) => {
             <Link
               className="text-sm font-medium"
               href={`/issues/list?status=${container.status}`}
-            ></Link>
+            >
+              {container.label}
+            </Link>
             <Text size="5" className="font-bold">
               {container.value}
             </Text>
