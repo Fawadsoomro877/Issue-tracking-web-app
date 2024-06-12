@@ -1,5 +1,10 @@
 import Image from "next/image";
+import LatestIssues from "./LatestIssues";
 
 export default function Home() {
-  return <main>HEllo Next Js</main>;
+  return (
+    <main>
+      <LatestIssues />
+    </main>
+  );
 }
